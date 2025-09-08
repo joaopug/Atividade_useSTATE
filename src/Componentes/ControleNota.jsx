@@ -25,11 +25,10 @@ function notasControladas(){
 
     return(
         <div>
-            <p>Digite o nome do aluno: </p>
+            <p>Digite o nome dsadsddo aluno: </p>
             <input onChange={pegarNome}/>
-            <p>Digite a nota do aluno: </p>
+            <p>saassDigite a nota do aluno: </p>
             <input onChange={pegarNota}/>
-
             <button onClick={verResultado}>Ver resultado</button>
             <p>{notaENome}</p>
         </div>
