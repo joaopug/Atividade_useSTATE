@@ -1,24 +1,24 @@
-import { useState } from "react"
+import { useState } from "react";
 
-function barraProgresso() {
+function barraProgresso(){
 
-    const [progresso, setProgresso] = useState(0)
+    const [progresso, setProgresso] = useState(0);
 
-    function mudarBarra(acao) {
-        if (acao == 1 && progresso < 100) {
-            setProgresso(progresso + 10)
+    function mudaBarra(acao){
+        if(acao == 1 && progresso < 100){
+            setProgresso(tamanho + 10)
         } else {
-            if (progresso > 0) {
-                setProgresso(progresso - 10)
+            if (tamanho > 0){
+                setProgresso(tamanho - 10)
             }
         }
     }
 
-
-    return (
+    return(
         <>
-            <button onClick={() => mudarBarra(1)}>+10%</button>
-            <button onClick={() => mudarBarra(2)}>-10%</button>
+        <button onClick={() => mudaBarra(1)}>+10%</button>
+        <button onClick={() => mudaBarra(2)}>-10%</button>
+        <p>{tamanho}</p>
         </>
     )
 }
